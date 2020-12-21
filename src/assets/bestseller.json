@@ -1,0 +1,1998 @@
+{
+  "request_info": {
+    "success": true,
+    "credits_used": 3,
+    "credits_remaining": 97
+  },
+  "request_metadata": {
+    "created_at": "2020-12-17T12:01:09.483Z",
+    "processed_at": "2020-12-17T12:01:13.570Z",
+    "total_time_taken": 4.09,
+    "amazon_url": "https://www.amazon.com/Best-Sellers/zgbs/fashion/ref=zg_bs_nav_0",
+    "timing": [
+      "global_init - 0ms (total 0ms)",
+      "auth_apikey - 40ms (total 40ms)",
+      "auth_retrieve_plan - 9ms (total 50ms)",
+      "auth_retrieve_credit_usage - 14ms (total 65ms)",
+      "processing_invoking_worker - 0ms (total 65ms)",
+      "processing_execution_complete - 4087ms (total 4152ms)",
+      "auth_credit_usage_reconcile - 64ms (total 4217ms)",
+      "global_end - 0ms (total 4217ms)"
+    ]
+  },
+  "request_parameters": {
+    "type": "bestsellers",
+    "url": "https://www.amazon.com/Best-Sellers/zgbs/fashion/ref=zg_bs_nav_0",
+    "output": "json"
+  },
+  "bestsellers": [
+    {
+      "rank": 1,
+      "position": 1,
+      "title": "#followme Microfleece Men’s Plaid Pajama Pants with Pockets",
+      "asin": "B07NZ1LG87",
+      "link": "https://www.amazon.com/followme-Fleece-Pajama-Sleepwear-45902-BLK-S/dp/B07NZ1LG87/ref=zg_bs_fashion_1?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71exIkWsshL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.7,
+      "ratings_total": 9186,
+      "price_lower": {
+        "symbol": "$",
+        "value": 19.99,
+        "currency": "USD",
+        "raw": "$19.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 19.99,
+        "currency": "USD",
+        "raw": "$19.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 19.99,
+        "currency": "USD",
+        "raw": "$19.99 - $19.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 2,
+      "position": 2,
+      "title": "Wander Agio Womens Warm Long Shawl Wraps Large Scarves Knit Cashmere Feel Plaid Triangle Scarf",
+      "asin": "B075ZNXXVZ",
+      "link": "https://www.amazon.com/Wander-Agio-Womens-Triangle-Scarves/dp/B075ZNXXVZ/ref=zg_bs_fashion_2?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81RDxgZUHJL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.5,
+      "ratings_total": 5867,
+      "price_lower": {
+        "symbol": "$",
+        "value": 5.09,
+        "currency": "USD",
+        "raw": "$5.09"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 15.99,
+        "currency": "USD",
+        "raw": "$15.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 5.09,
+        "currency": "USD",
+        "raw": "$5.09 - $15.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 3,
+      "position": 3,
+      "title": "Crocs Unisex-Adult Classic Clog | Water Shoes | Comfortable Slip On Shoes",
+      "asin": "B07K8DH1LJ",
+      "link": "https://www.amazon.com/Crocs-Unisex-Classic-Pepper-Women/dp/B07K8DH1LJ/ref=zg_bs_fashion_3?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81YdsrLdGcL._AC_UL200_SR200,200_.jpg",
+      "rating": 5,
+      "ratings_total": 8,
+      "price_lower": {
+        "symbol": "$",
+        "value": 28.91,
+        "currency": "USD",
+        "raw": "$28.91"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 97.01,
+        "currency": "USD",
+        "raw": "$97.01"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 28.91,
+        "currency": "USD",
+        "raw": "$28.91 - $97.01"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 4,
+      "position": 4,
+      "title": "Carhartt Men's K87 Workwear Pocket Short Sleeve T-Shirt (Regular and Big & Tall Sizes)",
+      "asin": "B0007XB2Y8",
+      "link": "https://www.amazon.com/Carhartt-Workwear-Pocket-Short-Sleeve-T-Shirt/dp/B0007XB2Y8/ref=zg_bs_fashion_4?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81157f2TGLL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 42889,
+      "price_lower": {
+        "symbol": "$",
+        "value": 13,
+        "currency": "USD",
+        "raw": "$13.00"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 39.95,
+        "currency": "USD",
+        "raw": "$39.95"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 13,
+        "currency": "USD",
+        "raw": "$13.00 - $39.95"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 5,
+      "position": 5,
+      "title": "Hanes Mens Pullover Ecosmart Fleece Hooded Sweatshirt",
+      "asin": "B071GCRXN9",
+      "link": "https://www.amazon.com/Hanes-Pullover-EcoSmart-Fleece-Sweatshirt/dp/B071GCRXN9/ref=zg_bs_fashion_5?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91yYO9G1ECL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.5,
+      "ratings_total": 59254,
+      "price_lower": {
+        "symbol": "$",
+        "value": 12,
+        "currency": "USD",
+        "raw": "$12.00"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 49.98,
+        "currency": "USD",
+        "raw": "$49.98"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 12,
+        "currency": "USD",
+        "raw": "$12.00 - $49.98"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 6,
+      "position": 6,
+      "title": "Lavley - If You Can Read This Bring Me Novelty Socks - Funny Dress Socks For Men and Women",
+      "asin": "B071Z2B2C4",
+      "link": "https://www.amazon.com/Lavley-Novelty-Socks-Bring-Bacon/dp/B071Z2B2C4/ref=zg_bs_fashion_6?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91Regz3z%2BJL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.7,
+      "ratings_total": 8587,
+      "price_lower": {
+        "symbol": "$",
+        "value": 9.95,
+        "currency": "USD",
+        "raw": "$9.95"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 13.95,
+        "currency": "USD",
+        "raw": "$13.95"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 9.95,
+        "currency": "USD",
+        "raw": "$9.95 - $13.95"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 7,
+      "position": 7,
+      "title": "Carhartt Men's Knit Cuffed Beanie",
+      "asin": "B08BG8JBCR",
+      "link": "https://www.amazon.com/Carhartt-Cuffed-Beanie-Alabaster-Heather/dp/B08BG8JBCR/ref=zg_bs_fashion_7?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71o%2BohGizXL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.8,
+      "ratings_total": 56399,
+      "price_lower": {
+        "symbol": "$",
+        "value": 15,
+        "currency": "USD",
+        "raw": "$15.00"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 49.95,
+        "currency": "USD",
+        "raw": "$49.95"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 15,
+        "currency": "USD",
+        "raw": "$15.00 - $49.95"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 8,
+      "position": 8,
+      "title": "Dickies Men's Dri-tech Moisture Control Crew Socks Multipack",
+      "asin": "B0757RXZJH",
+      "link": "https://www.amazon.com/Dickies-Multi-Pack-Dri-Tech-Moisture-Control/dp/B0757RXZJH/ref=zg_bs_fashion_8?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91b6MxtotyL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.7,
+      "ratings_total": 64838,
+      "price_lower": {
+        "symbol": "$",
+        "value": 9.98,
+        "currency": "USD",
+        "raw": "$9.98"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 38.97,
+        "currency": "USD",
+        "raw": "$38.97"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 9.98,
+        "currency": "USD",
+        "raw": "$9.98 - $38.97"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 9,
+      "position": 9,
+      "title": "ULTRAIDEAS Women's Cozy Memory Foam Slippers Fuzzy Wool-Like Plush Fleece Lined House Shoes w/Indoor, Outdoor Anti-Skid…",
+      "asin": "B074M8Y9GH",
+      "link": "https://www.amazon.com/Comfort-Slippers-Wool-Like-Outdoor-Anti-Skid/dp/B074M8Y9GH/ref=zg_bs_fashion_9?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71ynWM8ekfL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 21554,
+      "price_lower": {
+        "symbol": "$",
+        "value": 25.9,
+        "currency": "USD",
+        "raw": "$25.90"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 29.9,
+        "currency": "USD",
+        "raw": "$29.90"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 25.9,
+        "currency": "USD",
+        "raw": "$25.90 - $29.90"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 10,
+      "position": 10,
+      "title": "Hanes Men's Long Sleeve Beefy Henley Shirt",
+      "asin": "B010277HO2",
+      "link": "https://www.amazon.com/Hanes-Long-Sleeve-Beefy-Henley-T-Shirt/dp/B010277HO2/ref=zg_bs_fashion_10?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81HaBPr5sLL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 21452,
+      "price_lower": {
+        "symbol": "$",
+        "value": 9.96,
+        "currency": "USD",
+        "raw": "$9.96"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 54.14,
+        "currency": "USD",
+        "raw": "$54.14"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 9.96,
+        "currency": "USD",
+        "raw": "$9.96 - $54.14"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 11,
+      "position": 11,
+      "title": "RockDove Men's Original Two-Tone Memory Foam Slipper",
+      "asin": "B071FG4ZLY",
+      "link": "https://www.amazon.com/RockDove-Two-Tone-Memory-Slipper-Black/dp/B071FG4ZLY/ref=zg_bs_fashion_11?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/715rfN9D20L._AC_UL200_SR200,200_.jpg",
+      "rating": 4.5,
+      "ratings_total": 57212,
+      "price_lower": {
+        "symbol": "$",
+        "value": 22.99,
+        "currency": "USD",
+        "raw": "$22.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 24.99,
+        "currency": "USD",
+        "raw": "$24.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 22.99,
+        "currency": "USD",
+        "raw": "$22.99 - $24.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 12,
+      "position": 12,
+      "title": "Hanes Women’s EcoSmart Sweatpant – Regular and Petite Lengths",
+      "asin": "B0169P8XNU",
+      "link": "https://www.amazon.com/Hanes-Womens-Middle-Sweatpant-Ebony/dp/B0169P8XNU/ref=zg_bs_fashion_12?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81ecDIev80L._AC_UL200_SR200,200_.jpg",
+      "rating": 4,
+      "ratings_total": 21556,
+      "price_lower": {
+        "symbol": "$",
+        "value": 7.25,
+        "currency": "USD",
+        "raw": "$7.25"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 19.56,
+        "currency": "USD",
+        "raw": "$19.56"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 7.25,
+        "currency": "USD",
+        "raw": "$7.25 - $19.56"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 13,
+      "position": 13,
+      "title": "Arctix Women's Insulated Snow Pants",
+      "asin": "B005SRCHBU",
+      "link": "https://www.amazon.com/Arctix-Womens-Insulated-X-Small-Regular/dp/B005SRCHBU/ref=zg_bs_fashion_13?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71LNvMOpk7L._AC_UL200_SR200,200_.jpg",
+      "rating": 4.4,
+      "ratings_total": 13580,
+      "price_lower": {
+        "symbol": "$",
+        "value": 22.18,
+        "currency": "USD",
+        "raw": "$22.18"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 95.87,
+        "currency": "USD",
+        "raw": "$95.87"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 22.18,
+        "currency": "USD",
+        "raw": "$22.18 - $95.87"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 14,
+      "position": 14,
+      "title": "Gildan Men's Crew T-Shirt Multipack",
+      "asin": "B077ZKF9ZN",
+      "link": "https://www.amazon.com/Gildan-Mens-T-Shirt-Assortment-Small/dp/B077ZKF9ZN/ref=zg_bs_fashion_14?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/710o0VupScL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 75987,
+      "price_lower": {
+        "symbol": "$",
+        "value": 15.97,
+        "currency": "USD",
+        "raw": "$15.97"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 52.6,
+        "currency": "USD",
+        "raw": "$52.60"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 15.97,
+        "currency": "USD",
+        "raw": "$15.97 - $52.60"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 15,
+      "position": 15,
+      "title": "Leggings Depot Women's Printed Solid Activewear Jogger Track Cuff Sweatpants",
+      "asin": "B086V4ZZZP",
+      "link": "https://www.amazon.com/Leggings-Depot-JYL19-BLACK-S-ActiveFlex-Slim-fit/dp/B086V4ZZZP/ref=zg_bs_fashion_15?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51xx36uTEiL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.4,
+      "ratings_total": 34207,
+      "price_lower": {
+        "symbol": "$",
+        "value": 9.99,
+        "currency": "USD",
+        "raw": "$9.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 16.99,
+        "currency": "USD",
+        "raw": "$16.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 9.99,
+        "currency": "USD",
+        "raw": "$9.99 - $16.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 16,
+      "position": 16,
+      "title": "Loritta 5 Pairs Womens Vintage Style Winter Soft Warm Thick Knit Wool Crew Socks",
+      "asin": "B01M0WBQQ5",
+      "link": "https://www.amazon.com/Loritta-Womens-Vintage-Winter-Multicolor/dp/B01M0WBQQ5/ref=zg_bs_fashion_16?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81MnbqgPxXL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 9686,
+      "price_lower": {
+        "symbol": "$",
+        "value": 7.99,
+        "currency": "USD",
+        "raw": "$7.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 20.99,
+        "currency": "USD",
+        "raw": "$20.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 7.99,
+        "currency": "USD",
+        "raw": "$7.99 - $20.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 17,
+      "position": 17,
+      "title": "Gildan Men's Ultra Cotton Long Sleeve T-Shirt, Style G2400, 2-Pack",
+      "asin": "B076831CCJ",
+      "link": "https://www.amazon.com/Gildan-Cotton-Sleeve-T-Shirt-2-Pack/dp/B076831CCJ/ref=zg_bs_fashion_17?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71Bwaf1QPUL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.5,
+      "ratings_total": 39898,
+      "price_lower": {
+        "symbol": "$",
+        "value": 10.9,
+        "currency": "USD",
+        "raw": "$10.90"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 45.38,
+        "currency": "USD",
+        "raw": "$45.38"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 10.9,
+        "currency": "USD",
+        "raw": "$10.90 - $45.38"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 18,
+      "position": 18,
+      "title": "I Paused My Game to Be Here | Funny Video Gamer Humor Joke for Men Women T-Shirt",
+      "asin": "B07PJVJ82T",
+      "link": "https://www.amazon.com/Paused-Funny-Gaming-Player-T-Shirt/dp/B07PJVJ82T/ref=zg_bs_fashion_18?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81RdISJ2jDL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.7,
+      "ratings_total": 9176,
+      "price_lower": {
+        "symbol": "$",
+        "value": 14.95,
+        "currency": "USD",
+        "raw": "$14.95"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 14.95,
+        "currency": "USD",
+        "raw": "$14.95"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 14.95,
+        "currency": "USD",
+        "raw": "$14.95 - $14.95"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 19,
+      "position": 19,
+      "title": "Hanes Men's Ecosmart Fleece Sweatshirt",
+      "asin": "B072K68D77",
+      "link": "https://www.amazon.com/Hanes-EcoSmart-Fleece-Sweatshirt-Small/dp/B072K68D77/ref=zg_bs_fashion_19?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91crpv2PcsL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 51640,
+      "price_lower": {
+        "symbol": "$",
+        "value": 7.84,
+        "currency": "USD",
+        "raw": "$7.84"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 28.44,
+        "currency": "USD",
+        "raw": "$28.44"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 7.84,
+        "currency": "USD",
+        "raw": "$7.84 - $28.44"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 20,
+      "position": 20,
+      "title": "Hanes Men's Full-Zip Eco-Smart Fleece Hoodie",
+      "asin": "B071JDWV4R",
+      "link": "https://www.amazon.com/Hanes-Full-Zip-EcoSmart-Fleece-Hoodie/dp/B071JDWV4R/ref=zg_bs_fashion_20?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91oXi6NLI9L._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 32895,
+      "price_lower": {
+        "symbol": "$",
+        "value": 13.99,
+        "currency": "USD",
+        "raw": "$13.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 39.98,
+        "currency": "USD",
+        "raw": "$39.98"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 13.99,
+        "currency": "USD",
+        "raw": "$13.99 - $39.98"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 21,
+      "position": 21,
+      "title": "Fruit of the Loom Men's Coolzone Boxer Briefs (Assorted Colors)",
+      "asin": "B08FBL9RML",
+      "link": "https://www.amazon.com/Fruit-Loom-Coolzone-Briefs-Pack-Assorted/dp/B08FBL9RML/ref=zg_bs_fashion_21?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81g0ghf-QaL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 52021,
+      "price_lower": {
+        "symbol": "$",
+        "value": 10.49,
+        "currency": "USD",
+        "raw": "$10.49"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 49.99,
+        "currency": "USD",
+        "raw": "$49.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 10.49,
+        "currency": "USD",
+        "raw": "$10.49 - $49.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 22,
+      "position": 22,
+      "title": "Just Love Women Buffalo Plaid Pajama Pants Sleepwear",
+      "asin": "B07BZF92G3",
+      "link": "https://www.amazon.com/Just-Love-Buffalo-Sleepwear-6324-10195-MNT-XS/dp/B07BZF92G3/ref=zg_bs_fashion_22?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91sjTeHYK%2BL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.1,
+      "ratings_total": 3153,
+      "price_lower": {
+        "symbol": "$",
+        "value": 17.99,
+        "currency": "USD",
+        "raw": "$17.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 17.99,
+        "currency": "USD",
+        "raw": "$17.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 17.99,
+        "currency": "USD",
+        "raw": "$17.99 - $17.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 23,
+      "position": 23,
+      "title": "Champion Men's Powerblend Fleece Pullover Hoodie",
+      "asin": "B01HIUTC9O",
+      "link": "https://www.amazon.com/Champion-Powerblend-Pullover-Hoodie-Black/dp/B01HIUTC9O/ref=zg_bs_fashion_23?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81gCE2c1U4L._AC_UL200_SR200,200_.jpg",
+      "rating": 4.7,
+      "ratings_total": 18135,
+      "price_lower": {
+        "symbol": "$",
+        "value": 22,
+        "currency": "USD",
+        "raw": "$22.00"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 55.31,
+        "currency": "USD",
+        "raw": "$55.31"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 22,
+        "currency": "USD",
+        "raw": "$22.00 - $55.31"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 24,
+      "position": 24,
+      "title": "Arctix Kids Insulated Snow Bib Overalls",
+      "asin": "B07L4K2TLK",
+      "link": "https://www.amazon.com/Arctix-Insulated-Overall-Ameythst-X-Small/dp/B07L4K2TLK/ref=zg_bs_fashion_24?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/7138XstRjbL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.7,
+      "ratings_total": 6537,
+      "price_lower": {
+        "symbol": "$",
+        "value": 22.43,
+        "currency": "USD",
+        "raw": "$22.43"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 59.99,
+        "currency": "USD",
+        "raw": "$59.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 22.43,
+        "currency": "USD",
+        "raw": "$22.43 - $59.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 25,
+      "position": 25,
+      "title": "TRENDOUX Winter Gloves for Men and Women - Upgraded Touch Screen Anti-Slip Silicone Gel - Elastic Cuff - Thermal Soft…",
+      "asin": "B07JYJM6JT",
+      "link": "https://www.amazon.com/TRENDOUX-Winter-Texting-Smartphone-Driving/dp/B07JYJM6JT/ref=zg_bs_fashion_25?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71j8rduSsuL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.3,
+      "ratings_total": 11503,
+      "price_lower": {
+        "symbol": "$",
+        "value": 11.99,
+        "currency": "USD",
+        "raw": "$11.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 12.99,
+        "currency": "USD",
+        "raw": "$12.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 11.99,
+        "currency": "USD",
+        "raw": "$11.99 - $12.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 26,
+      "position": 26,
+      "title": "Jerzees Men's Dri-Power Long Sleeve T-Shirt",
+      "asin": "B00T7TXR6E",
+      "link": "https://www.amazon.com/Jerzees-Long-Sleeve-T-Shirt-Black-Small/dp/B00T7TXR6E/ref=zg_bs_fashion_26?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/810hQ8n009L._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 15553,
+      "price_lower": {
+        "symbol": "$",
+        "value": 6.9,
+        "currency": "USD",
+        "raw": "$6.90"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 25.77,
+        "currency": "USD",
+        "raw": "$25.77"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 6.9,
+        "currency": "USD",
+        "raw": "$6.90 - $25.77"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 27,
+      "position": 27,
+      "title": "adidas Men's Adilette Shower Slides",
+      "asin": "B07SCW4GG5",
+      "link": "https://www.amazon.com/adidas-Adilette-Shower-Slide-Sandal/dp/B07SCW4GG5/ref=zg_bs_fashion_27?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71LYiNvdAoL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 42399,
+      "price_lower": {
+        "symbol": "$",
+        "value": 15,
+        "currency": "USD",
+        "raw": "$15.00"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 69.99,
+        "currency": "USD",
+        "raw": "$69.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 15,
+        "currency": "USD",
+        "raw": "$15.00 - $69.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 28,
+      "position": 28,
+      "title": "Gildan Men's Fleece Crewneck Sweatshirt, Style G18000",
+      "asin": "B07MKKG1K1",
+      "link": "https://www.amazon.com/Gildan-Fleece-Crewneck-Sweatshirt-Small/dp/B07MKKG1K1/ref=zg_bs_fashion_28?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91DWMXXl%2BuL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.7,
+      "ratings_total": 19703,
+      "price_lower": {
+        "symbol": "$",
+        "value": 8.02,
+        "currency": "USD",
+        "raw": "$8.02"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 33.95,
+        "currency": "USD",
+        "raw": "$33.95"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 8.02,
+        "currency": "USD",
+        "raw": "$8.02 - $33.95"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 29,
+      "position": 29,
+      "title": "Hudson Baby Unisex Cozy Fleece Booties",
+      "asin": "B074G4TFV8",
+      "link": "https://www.amazon.com/Hudson-Baby-Fleece-Booties-Bottom/dp/B074G4TFV8/ref=zg_bs_fashion_29?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81LvC6xR%2BeL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.8,
+      "ratings_total": 20794,
+      "price_lower": {
+        "symbol": "$",
+        "value": 7.37,
+        "currency": "USD",
+        "raw": "$7.37"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 20.22,
+        "currency": "USD",
+        "raw": "$20.22"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 7.37,
+        "currency": "USD",
+        "raw": "$7.37 - $20.22"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 30,
+      "position": 30,
+      "title": "Just Love 100% Cotton Jersey Women Plaid Pajama Pants Sleepwear",
+      "asin": "B07NNXKWQD",
+      "link": "https://www.amazon.com/Just-Love-Pajama-Sleepwear-6324-BLK-10018-XS/dp/B07NNXKWQD/ref=zg_bs_fashion_30?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81B4VhkCGDL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.1,
+      "ratings_total": 7447,
+      "price_lower": {
+        "symbol": "$",
+        "value": 16.99,
+        "currency": "USD",
+        "raw": "$16.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 16.99,
+        "currency": "USD",
+        "raw": "$16.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 16.99,
+        "currency": "USD",
+        "raw": "$16.99 - $16.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 31,
+      "position": 31,
+      "title": "Saucony Women's Performance Heel Tab Athletic Socks (8 & 16 Pairs)",
+      "asin": "B086QN7BBQ",
+      "link": "https://www.amazon.com/Saucony-Womens-Performance-Athletic-Assorted/dp/B086QN7BBQ/ref=zg_bs_fashion_31?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91sBY6KcHWL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.8,
+      "ratings_total": 25672,
+      "price_lower": {
+        "symbol": "$",
+        "value": 13.99,
+        "currency": "USD",
+        "raw": "$13.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 27,
+        "currency": "USD",
+        "raw": "$27.00"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 13.99,
+        "currency": "USD",
+        "raw": "$13.99 - $27.00"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 32,
+      "position": 32,
+      "title": "Levi's Men's 505 Regular Fit Jeans",
+      "asin": "B001H0FVAG",
+      "link": "https://www.amazon.com/Levis-Regular-Fit-Jeans-Medium-Stonewash/dp/B001H0FVAG/ref=zg_bs_fashion_32?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61NlrvixWeL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 39386,
+      "price_lower": {
+        "symbol": "$",
+        "value": 30.45,
+        "currency": "USD",
+        "raw": "$30.45"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 69.5,
+        "currency": "USD",
+        "raw": "$69.50"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 30.45,
+        "currency": "USD",
+        "raw": "$30.45 - $69.50"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 33,
+      "position": 33,
+      "title": "Lavley - I'd Rather Be - Funny Socks For Men and Women (Golfing Fishing Hunting Camping Racing Football Biking Grilling)",
+      "asin": "B07TT9F9FV",
+      "link": "https://www.amazon.com/Lavley-Rather-Golfing-Novelty-Socks/dp/B07TT9F9FV/ref=zg_bs_fashion_33?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91%2BCOC9NWjL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.8,
+      "ratings_total": 2352,
+      "price_lower": {
+        "symbol": "$",
+        "value": 9.95,
+        "currency": "USD",
+        "raw": "$9.95"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 12.95,
+        "currency": "USD",
+        "raw": "$12.95"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 9.95,
+        "currency": "USD",
+        "raw": "$9.95 - $12.95"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 34,
+      "position": 34,
+      "title": "C.C Trendy Warm Chunky Soft Stretch Cable Knit Beanie Skully",
+      "asin": "B076RFKVXM",
+      "link": "https://www.amazon.com/C-C-Trendy-Chunky-Stretch-Charcoal/dp/B076RFKVXM/ref=zg_bs_fashion_34?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71lWLy-xPJL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 20136,
+      "price_lower": {
+        "symbol": "$",
+        "value": 9.76,
+        "currency": "USD",
+        "raw": "$9.76"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 18.99,
+        "currency": "USD",
+        "raw": "$18.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 9.76,
+        "currency": "USD",
+        "raw": "$9.76 - $18.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 35,
+      "position": 35,
+      "title": "Children Toddlers Infant and Baby Mittens - Thinsulate Winter Waterproof Gloves",
+      "asin": "B087WDW48F",
+      "link": "https://www.amazon.com/Children-Toddlers-Infant-Baby-Mittens/dp/B087WDW48F/ref=zg_bs_fashion_35?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71t%2BagE5tnL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.7,
+      "ratings_total": 3928,
+      "price_lower": {
+        "symbol": "$",
+        "value": 14.99,
+        "currency": "USD",
+        "raw": "$14.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 18.99,
+        "currency": "USD",
+        "raw": "$18.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 14.99,
+        "currency": "USD",
+        "raw": "$14.99 - $18.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 36,
+      "position": 36,
+      "title": "Alimens & Gentle Men's Button Down Regular Fit Long Sleeve Plaid Flannel Casual Shirts",
+      "asin": "B07CXYV1PW",
+      "link": "https://www.amazon.com/Alimens-Gentle-Button-Regular-Flannel/dp/B07CXYV1PW/ref=zg_bs_fashion_36?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/819wcaoF7FL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 9795,
+      "price_lower": {
+        "symbol": "$",
+        "value": 13.99,
+        "currency": "USD",
+        "raw": "$13.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 26.99,
+        "currency": "USD",
+        "raw": "$26.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 13.99,
+        "currency": "USD",
+        "raw": "$13.99 - $26.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 37,
+      "position": 37,
+      "title": "YZKKE 5Pack Womens Vintage Winter Soft Warm Thick Cold Knit Wool Crew Socks, Multicolor, free size",
+      "asin": "B075D9G69J",
+      "link": "https://www.amazon.com/YZKKE-Womens-Vintage-Winter-Multicolor/dp/B075D9G69J/ref=zg_bs_fashion_37?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91JHfyArhTL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 7004,
+      "price_lower": {
+        "symbol": "$",
+        "value": 18.98,
+        "currency": "USD",
+        "raw": "$18.98"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 23.98,
+        "currency": "USD",
+        "raw": "$23.98"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 18.98,
+        "currency": "USD",
+        "raw": "$18.98 - $23.98"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 38,
+      "position": 38,
+      "title": "Just Love Printed Plush Robe for Women",
+      "asin": "B01GIE0TBG",
+      "link": "https://www.amazon.com/Just-Love-6312-Black-XS-Kimono-Robes/dp/B01GIE0TBG/ref=zg_bs_fashion_38?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71cUhgmgZUL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 4822,
+      "price_lower": {
+        "symbol": "$",
+        "value": 29.99,
+        "currency": "USD",
+        "raw": "$29.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 29.99,
+        "currency": "USD",
+        "raw": "$29.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 29.99,
+        "currency": "USD",
+        "raw": "$29.99 - $29.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 39,
+      "position": 39,
+      "title": "Do Not Disturb Gaming Socks, Funny Cotton Novelty Gamer Socks Gifts for Kids Teen Boys Mens Womens Game Lovers",
+      "asin": "B07JC59DR6",
+      "link": "https://www.amazon.com/Disturb-Gaming-Novelty-Cotton-Valentines/dp/B07JC59DR6/ref=zg_bs_fashion_39?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/719QJs17gPL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.7,
+      "ratings_total": 2728,
+      "price_lower": {
+        "symbol": "$",
+        "value": 11.99,
+        "currency": "USD",
+        "raw": "$11.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 22.99,
+        "currency": "USD",
+        "raw": "$22.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 11.99,
+        "currency": "USD",
+        "raw": "$11.99 - $22.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 40,
+      "position": 40,
+      "title": "TRAVANDO Mens Slim Wallet with Money Clip AUSTIN RFID Blocking Bifold Credit Card Holder for Men with Gift Box",
+      "asin": "B07P73KK1J",
+      "link": "https://www.amazon.com/TRAVANDO-Wallet-Blocking-AUSTIN-Minimalist/dp/B07P73KK1J/ref=zg_bs_fashion_40?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71ez9ji2IXL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.5,
+      "ratings_total": 12550,
+      "price_lower": {
+        "symbol": "$",
+        "value": 29.95,
+        "currency": "USD",
+        "raw": "$29.95"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 29.95,
+        "currency": "USD",
+        "raw": "$29.95"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 29.95,
+        "currency": "USD",
+        "raw": "$29.95 - $29.95"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 41,
+      "position": 41,
+      "title": "Southpole Men's Active Basic Jogger Fleece Pants",
+      "asin": "B01N5GHL1H",
+      "link": "https://www.amazon.com/Southpole-Active-Jogger-Fleece-X-SMALL/dp/B01N5GHL1H/ref=zg_bs_fashion_41?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81gyf9gcoGL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.4,
+      "ratings_total": 22683,
+      "price_lower": {
+        "symbol": "$",
+        "value": 12.72,
+        "currency": "USD",
+        "raw": "$12.72"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 40.33,
+        "currency": "USD",
+        "raw": "$40.33"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 12.72,
+        "currency": "USD",
+        "raw": "$12.72 - $40.33"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 42,
+      "position": 42,
+      "title": "Gildan Men's Fleece Hooded Sweatshirt, Style G18500",
+      "asin": "B07MGYHDFH",
+      "link": "https://www.amazon.com/Gildan-Fleece-Hooded-Sweatshirt-G18500/dp/B07MGYHDFH/ref=zg_bs_fashion_42?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81GgkxeKGaL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 35434,
+      "price_lower": {
+        "symbol": "$",
+        "value": 12.75,
+        "currency": "USD",
+        "raw": "$12.75"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 39.41,
+        "currency": "USD",
+        "raw": "$39.41"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 12.75,
+        "currency": "USD",
+        "raw": "$12.75 - $39.41"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 43,
+      "position": 43,
+      "title": "Hanes Women's V-Notch Pullover Fleece Sweatshirt",
+      "asin": "B07WSRWF2F",
+      "link": "https://www.amazon.com/Hanes-V-Notch-Pullover-Sweatshirt-Heather/dp/B07WSRWF2F/ref=zg_bs_fashion_43?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71D9wqcaiBL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.3,
+      "ratings_total": 14499,
+      "price_lower": {
+        "symbol": "$",
+        "value": 8,
+        "currency": "USD",
+        "raw": "$8.00"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 21.36,
+        "currency": "USD",
+        "raw": "$21.36"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 8,
+        "currency": "USD",
+        "raw": "$8.00 - $21.36"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 44,
+      "position": 44,
+      "title": "Joycuff Inspirational Bracelets for Women Mom Personalized Gift for Her Engraved Mantra Cuff Bangle Crown Birthday…",
+      "asin": "B07SHKPW77",
+      "link": "https://www.amazon.com/Friendship-Journey-Without-Bracelet-Jewelry/dp/B07SHKPW77/ref=zg_bs_fashion_44?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71W0eCjgllL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.7,
+      "ratings_total": 13088,
+      "price_lower": {
+        "symbol": "$",
+        "value": 13.97,
+        "currency": "USD",
+        "raw": "$13.97"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 14.97,
+        "currency": "USD",
+        "raw": "$14.97"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 13.97,
+        "currency": "USD",
+        "raw": "$13.97 - $14.97"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 45,
+      "position": 45,
+      "title": "Arctix Infant/Toddler Chest High Snow Bib Overalls",
+      "asin": "B001NP9GB0",
+      "link": "https://www.amazon.com/Arctix-Infant-Toddler-Chest-Overalls-Black/dp/B001NP9GB0/ref=zg_bs_fashion_45?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/814vzA52hoL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.8,
+      "ratings_total": 6785,
+      "price_lower": {
+        "symbol": "$",
+        "value": 13.24,
+        "currency": "USD",
+        "raw": "$13.24"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 38.33,
+        "currency": "USD",
+        "raw": "$38.33"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 13.24,
+        "currency": "USD",
+        "raw": "$13.24 - $38.33"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 46,
+      "position": 46,
+      "title": "Tiny Gold Initial Heart Necklace-14K Gold Filled Handmade Dainty Personalized Letter Heart Choker Necklace Gift for…",
+      "asin": "B07DG1W26K",
+      "link": "https://www.amazon.com/Initial-Necklace-14K-Handmade-Personalized-Necklace/dp/B07DG1W26K/ref=zg_bs_fashion_46?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61UhMm4wOfL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.5,
+      "ratings_total": 10499,
+      "price_lower": {
+        "symbol": "$",
+        "value": 12.99,
+        "currency": "USD",
+        "raw": "$12.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 14.99,
+        "currency": "USD",
+        "raw": "$14.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 12.99,
+        "currency": "USD",
+        "raw": "$12.99 - $14.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 47,
+      "position": 47,
+      "title": "C.C Thick Cable Knit Faux Fuzzy Fur Pom Fleece Lined Skull Cap Cuff Beanie",
+      "asin": "B07KTCQWQT",
+      "link": "https://www.amazon.com/C-C-Thick-Cable-Fleece-Beanie/dp/B07KTCQWQT/ref=zg_bs_fashion_47?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/917Hy6Jos2L._AC_UL200_SR200,200_.jpg",
+      "rating": 4.8,
+      "ratings_total": 7679,
+      "price_lower": {
+        "symbol": "$",
+        "value": 15.39,
+        "currency": "USD",
+        "raw": "$15.39"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 19.99,
+        "currency": "USD",
+        "raw": "$19.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 15.39,
+        "currency": "USD",
+        "raw": "$15.39 - $19.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 48,
+      "position": 48,
+      "title": "BALEAF Women's Fleece Lined Winter Leggings High Waisted Thermal Warm Yoga Pants with Pockets",
+      "asin": "B075FPZMPV",
+      "link": "https://www.amazon.com/Baleaf-Womens-Fleece-Leggings-Pocket/dp/B075FPZMPV/ref=zg_bs_fashion_48?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/715yb97jrYL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.5,
+      "ratings_total": 6422,
+      "price_lower": {
+        "symbol": "$",
+        "value": 20.99,
+        "currency": "USD",
+        "raw": "$20.99"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 30.99,
+        "currency": "USD",
+        "raw": "$30.99"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 20.99,
+        "currency": "USD",
+        "raw": "$20.99 - $30.99"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 49,
+      "position": 49,
+      "title": "Under Armour Men's Tech 2.0 Short Sleeve T-Shirt",
+      "asin": "B07Z77JF9P",
+      "link": "https://www.amazon.com/Under-Armour-T-Shirt-Citrine-X-Small/dp/B07Z77JF9P/ref=zg_bs_fashion_49?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51mrOuTr2sL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.6,
+      "ratings_total": 26298,
+      "price_lower": {
+        "symbol": "$",
+        "value": 15.57,
+        "currency": "USD",
+        "raw": "$15.57"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 58.3,
+        "currency": "USD",
+        "raw": "$58.30"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 15.57,
+        "currency": "USD",
+        "raw": "$15.57 - $58.30"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    },
+    {
+      "rank": 50,
+      "position": 50,
+      "title": "Gildan Men's Regular Leg Boxer Brief Multipack",
+      "asin": "B07JD4YL8X",
+      "link": "https://www.amazon.com/Gildan-Regular-Boxer-Brief-Multipack/dp/B07JD4YL8X/ref=zg_bs_fashion_50?_encoding=UTF8&psc=1&refRID=FJ32BB3V19D4GK29NV61",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81ZP%2BbnduZL._AC_UL200_SR200,200_.jpg",
+      "rating": 4.5,
+      "ratings_total": 35717,
+      "price_lower": {
+        "symbol": "$",
+        "value": 11.97,
+        "currency": "USD",
+        "raw": "$11.97"
+      },
+      "price_upper": {
+        "symbol": "$",
+        "value": 31.89,
+        "currency": "USD",
+        "raw": "$31.89"
+      },
+      "price": {
+        "symbol": "$",
+        "value": 11.97,
+        "currency": "USD",
+        "raw": "$11.97 - $31.89"
+      },
+      "current_category": {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+        "id": "fashion"
+      },
+      "parent_category": {
+        "name": "Any Department",
+        "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+        "id": "zgbs"
+      }
+    }
+  ],
+  "pagination": {
+    "current_page": 1,
+    "total_pages": 2
+  },
+  "bestsellers_info": {
+    "current_category": {
+      "name": "Clothing, Shoes & Jewelry",
+      "link": "https://www.amazon.com/Best-Sellers/zgbs/fashion",
+      "id": "fashion"
+    },
+    "parent_category": {
+      "name": "Any Department",
+      "link": "https://www.amazon.com/Best-Sellers/zgbs/ref=zg_bs_unv_0_fashion_1",
+      "id": "zgbs"
+    },
+    "child_categories": [
+      {
+        "name": "Women",
+        "link": "https://www.amazon.com/Best-Sellers-Womens-Fashion/zgbs/fashion/7147440011/ref=zg_bs_nav_1_fashion",
+        "id": "7147440011"
+      },
+      {
+        "name": "Men",
+        "link": "https://www.amazon.com/Best-Sellers-Mens-Fashion/zgbs/fashion/7147441011/ref=zg_bs_nav_1_fashion",
+        "id": "7147441011"
+      },
+      {
+        "name": "Girls",
+        "link": "https://www.amazon.com/Best-Sellers-Girls-Fashion/zgbs/fashion/7147442011/ref=zg_bs_nav_1_fashion",
+        "id": "7147442011"
+      },
+      {
+        "name": "Boys",
+        "link": "https://www.amazon.com/Best-Sellers-Boys-Fashion/zgbs/fashion/7147443011/ref=zg_bs_nav_1_fashion",
+        "id": "7147443011"
+      },
+      {
+        "name": "Baby",
+        "link": "https://www.amazon.com/Best-Sellers-Baby-Clothing-Shoes/zgbs/fashion/7147444011/ref=zg_bs_nav_1_fashion",
+        "id": "7147444011"
+      },
+      {
+        "name": "Novelty & More",
+        "link": "https://www.amazon.com/Best-Sellers-Novelty-More/zgbs/fashion/7147445011/ref=zg_bs_nav_1_fashion",
+        "id": "7147445011"
+      },
+      {
+        "name": "Uniforms, Work & Safety",
+        "link": "https://www.amazon.com/Best-Sellers-Uniforms-Work-Safety/zgbs/fashion/7586144011/ref=zg_bs_nav_1_fashion",
+        "id": "7586144011"
+      },
+      {
+        "name": "Shoe, Jewelry & Watch Accessories",
+        "link": "https://www.amazon.com/Best-Sellers-Shoe-Jewelry-Watch-Accessories/zgbs/fashion/7586146011/ref=zg_bs_nav_1_fashion",
+        "id": "7586146011"
+      },
+      {
+        "name": "Costumes & Accessories",
+        "link": "https://www.amazon.com/Best-Sellers-Costumes-Accessories/zgbs/fashion/7586165011/ref=zg_bs_nav_1_fashion",
+        "id": "7586165011"
+      },
+      {
+        "name": "Luggage & Travel Gear",
+        "link": "https://www.amazon.com/Best-Sellers-Luggage-Travel-Gear/zgbs/fashion/9479199011/ref=zg_bs_nav_1_fashion",
+        "id": "9479199011"
+      }
+    ]
+  }
+}
