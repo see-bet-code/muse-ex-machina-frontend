@@ -7,7 +7,6 @@ export const fetchItems = (id) => async (dispatch) => {
     }
   });
   const data = await res.json();
-  // console.log()
   dispatch({
     type: FETCH_ITEMS,
     payload: JSON.parse(data.active_cart).cart_items,
@@ -29,7 +28,7 @@ export const addToCart = (item) => (dispatch, getState) => {
     .then((data) => {
       dispatch({
         type: ADD_TO_CART,
-        payload: data.cart_items,
+        payload: JSON.parse(data.cart_items),
       });
     });
 };
@@ -49,7 +48,7 @@ export const updateCart = (item) => (dispatch, getState) => {
   .then((data) => {
     dispatch({
       type: UPDATE_CART_ITEM,
-      payload: data.cart_items,
+      payload: JSON.parse(data.cart_items),
     });
   });
 }

@@ -58,14 +58,18 @@ function ProductPage(props) {
     })();
   }, [props.items]);
 
-  const checkCart = (prod) => {
-    // props.addToCart
+  useEffect(() => {
+    (() => {
+      auth.signInFromToken();
+      
+    })();
+  }, []);
+
+  const checkCart = () => {
     let item;
-    console.log(props.items)
     if (props.items.length > 0) {
       item = props.items.find((x) => x.product_id === p.id)
     }
-    console.log(item)
     if (item) {
       props.updateCart(item)
     } else {
