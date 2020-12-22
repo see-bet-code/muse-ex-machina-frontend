@@ -10,4 +10,3 @@ export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
 export const CREATE_CART = "CREATE_CART";
 export const CLEAR_CART = "CLEAR_CART";
 export const FETCH_CARTS = "FETCH_CARTS";
-export const SET_ACTIVE_CART = "SET_ACTIVE_CART";

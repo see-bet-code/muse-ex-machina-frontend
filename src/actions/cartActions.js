@@ -1,4 +1,4 @@
-import { CREATE_CART, CLEAR_CART_ITEMS, CLEAR_CART, FETCH_CARTS, SET_ACTIVE_CART } from "constants/types";
+import { CREATE_CART, CLEAR_CART_ITEMS, CLEAR_CART, FETCH_CARTS } from "constants/types";
 
 export const fetchCarts = () => async (dispatch) => {
   const res = await fetch("http://localhost:3000/api/v1/carts", {

@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
-import Email from "@material-ui/icons/Email";
+// import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
 // core components
 import Header from "components/Header/Header.js";
@@ -27,17 +27,11 @@ const useStyles = makeStyles(styles);
 
 export default function LoginPage(props) {
   const auth = useAuth();
- 
 
-  const [state, setState] = useState({
-    name: "", 
-    email: "",
-    password: ""})
-
-    const handleChange = (e) => {
-      console.log(e.target)
-      console.log("hi")
-      // setState({...state, [e.target.placeholder]: e.target.value})
+  const handleChange = (e) => {
+    console.log(e.target)
+    console.log("hi")
+    // setState({...state, [e.target.placeholder]: e.target.value})
   }
 
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
@@ -55,7 +49,6 @@ export default function LoginPage(props) {
       // email: e.target.email.value,
       password: e.target.pass.value
     }
-    console.log(submission)
     auth.signup(submission)
   }
 

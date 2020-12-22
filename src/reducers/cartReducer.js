@@ -1,4 +1,4 @@
-import { CREATE_CART, CLEAR_CART, FETCH_CARTS, SET_ACTIVE_CART } from "constants/types";
+import { CREATE_CART, CLEAR_CART, FETCH_CARTS} from "constants/types";
 
 const cartReducer = (state = {
   carts: [],
@@ -24,11 +24,6 @@ const cartReducer = (state = {
     case FETCH_CARTS:
       return { carts: action.payload, 
         activeCart: action.active,
-        loading: false
-      };
-    case SET_ACTIVE_CART:
-      return { ...state,
-        activeCart: action.payload,
         loading: false
       };
     default:

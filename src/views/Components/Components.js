@@ -18,7 +18,7 @@ import HeaderLinks from "components/Header/HeaderLinks";
 // import SectionTabs from "./Sections/SectionTabs.js";
 // import SectionTypography from "./Sections/SectionTypography.js";
 // import SectionJavascript from "./Sections/SectionJavascript.js";
-import SectionCarousel from "./Sections/SectionCarousel.js";
+// import SectionCarousel from "./Sections/SectionCarousel.js";
 // import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
 // import SectionLogin from "./Sections/SectionLogin.js";
 // import SectionExamples from "./Sections/SectionExamples.js";
@@ -26,7 +26,8 @@ import SectionCarousel from "./Sections/SectionCarousel.js";
 import styles from "assets/jss/material-kit-react/views/components.js";
 import { connect } from "react-redux";
 import { fetchProducts } from "actions/productActions";
-// import { addToCart } from "actions/cartActions";
+// import Button from "components/CustomButtons/Button";
+import { sortProducts } from "actions/productActions";
 
 
 
@@ -36,10 +37,9 @@ function Components(props) {
 
   useEffect(() => {
     (() => {
-      // auth.signInFromToken();
       props.fetchProducts();
     })();
-  }, []);
+  });
 
   const classes = useStyles();
   const { ...rest } = props;
@@ -76,6 +76,9 @@ function Components(props) {
         <SectionNavbars />
         <SectionTabs />
         <SectionJavascript /> */}
+        {/* <Button color="primary" round onClick={console.log}>
+                        Remove From Cart
+                      </Button> */}
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={4}>
           {props.products?.map((p, i) => <div>
@@ -98,5 +101,5 @@ function Components(props) {
 
 export default connect(
   (state) => ({ products: state.products.filteredItems }),
-  { fetchProducts }
+  { fetchProducts, sortProducts }
 )(Components);

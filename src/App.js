@@ -10,8 +10,16 @@ import ProductPage from "views/ProductPage"
 import LoginPage from "views/LoginPage"
 import CartPage from "views/CartPage"
 
+import { useAuth } from "context/use-auth";
+
 function App() {
- 
+  const auth = useAuth();
+
+  useEffect(() => {
+    (() => {
+      auth.signInFromToken();
+    })();
+  }, []);
 
   return (
     <div>

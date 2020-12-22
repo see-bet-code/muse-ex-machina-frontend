@@ -11,6 +11,7 @@ export const fetchItems = (id) => async (dispatch) => {
     type: FETCH_ITEMS,
     payload: JSON.parse(data.active_cart).cart_items,
   });
+  return JSON.parse(data.active_cart).cart_items
 };
 
 export const addToCart = (item) => (dispatch, getState) => {

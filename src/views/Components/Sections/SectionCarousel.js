@@ -4,12 +4,12 @@ import Carousel from "react-slick";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import LocationOn from "@material-ui/icons/LocationOn";
+// import LocationOn from "@material-ui/icons/LocationOn";
 // core components
 import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
 import Card from "components/Card/Card";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 

@@ -20,7 +20,6 @@ import { fetchCarts } from "../actions/cartActions";
 import { connect } from "react-redux";
 import Button from "components/CustomButtons/Button";
 import { loadStripe } from '@stripe/stripe-js';
-import { useAuth } from "context/use-auth";
 
 const useStyles = makeStyles(styles);
 
@@ -30,14 +29,13 @@ const stripePromise = loadStripe('pk_test_51Hf7V4JGFWpzASnGce3wiFh3nVkn3WfNwKYMy
 function CartPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
-  const auth = useAuth();
   let total = 0.00
+  let cartId
 
   useEffect(() => {
     (async () => {
-      auth.signInFromToken();
-      const cartId = await props.fetchCarts()
-      props.fetchItems(cartId)
+      cartId = await props.fetchCarts()
+      await props.fetchItems(cartId)
     })();
   }, []);
 
@@ -70,6 +68,10 @@ function CartPage(props) {
       console.log(result.error.message)
     }
   };
+
+  const removeItem = (id) => {
+    props.removeFromCart(id)
+  }
 
   return (
     <div>
@@ -117,7 +119,7 @@ function CartPage(props) {
                   </Link>
                     Quantity: {c.quantity}  
                       Subtotal: {c.quantity * p.price}
-                      <Button color="primary" round onClick={() => props.removeFromCart(c.id)}>
+                      <Button color="primary" round onClick={() => removeItem(c.id)}>
                         Remove From Cart
                       </Button>
                     </div>

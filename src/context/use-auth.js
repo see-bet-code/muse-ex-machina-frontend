@@ -143,7 +143,7 @@ function useProvideAuth() {
 
   useEffect(() => {
     (() => (user ? setUser(user) : setUser(false)))();
-  }, []);
+  });
 
   // Return the user object and auth methods
 

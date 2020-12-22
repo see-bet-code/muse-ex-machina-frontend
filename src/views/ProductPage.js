@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
@@ -35,45 +35,42 @@ const useStyles = makeStyles(styles);
 
 function ProductPage(props) {
   const classes = useStyles();
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: false
 
-  };
+  // };
 
   const p = useLocation().state.product;
   const { ...rest } = props;
-  const auth = useAuth()
+  let cartId
 
   useEffect(() => {
     (async () => {
-      auth.signInFromToken();
-      const cartId = await props.fetchCarts();
+      cartId = await props.fetchCarts();
       props.fetchItems(cartId);
-      
-    })();
-  }, [props.items]);
-
-  useEffect(() => {
-    (() => {
-      auth.signInFromToken();
       
     })();
   }, []);
 
-  const checkCart = () => {
+  const checkCart = async () => {
+    cartId = await props.fetchCarts();
+    const items = await props.fetchItems(cartId);
+
     let item;
-    if (props.items.length > 0) {
-      item = props.items.find((x) => x.product_id === p.id)
+    if (items.length > 0) {
+      item = items.find((x) => x.product_id === p.id)
     }
     if (item) {
-      props.updateCart(item)
+      console.log("update")
+      await props.updateCart(item)
     } else {
-      props.addToCart(p)
+      console.log("post")
+      await props.addToCart(p)
     }
   }
 
@@ -118,7 +115,7 @@ function ProductPage(props) {
                   <h4>
                     {p.title + " ♡ " +p.price}
                   </h4>
-                    <img src={p.image} alt={`${p.title} image`} className="slick-image" />
+                    <img src={p.image} alt={`${p.title}`} className="slick-image" />
                 </div>
             </Card>
           </GridItem>

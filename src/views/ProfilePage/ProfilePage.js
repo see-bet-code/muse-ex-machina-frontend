@@ -16,9 +16,6 @@ import HeaderLinks from "components/Header/HeaderLinks";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-// import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-// import work5 from "assets/img/examples/clem-onojegaw.jpg";
-
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
 import { useAuth } from "context/use-auth";
@@ -27,20 +24,20 @@ const useStyles = makeStyles(styles);
 
 export default function ProfilePage(props) {
   const auth = useAuth();
-   useEffect(() => {
+  useEffect(() => {
     (() => {
       auth.signInFromToken();
     })();
-  }, [auth.user]);
+  }, []);
 
   const classes = useStyles();
   
   const { ...rest } = props;
-  const imageClasses = classNames(
-    classes.imgRaised,
-    classes.imgRoundedCircle,
-    classes.imgFluid
-  );
+  // const imageClasses = classNames(
+  //   classes.imgRaised,
+  //   classes.imgRoundedCircle,
+  //   classes.imgFluid
+  // );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
 
 
