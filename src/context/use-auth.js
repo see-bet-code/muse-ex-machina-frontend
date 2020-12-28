@@ -23,7 +23,7 @@ export const useAuth = () => {
 // Provider hook that creates auth object and handles state
 
 function useProvideAuth() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null)
   const [auth, setAuth] = useState(false)
   // Wrap any Firebase methods we want to use making sure ...
 
@@ -42,38 +42,26 @@ function useProvideAuth() {
       .then((data) => {
         
         setAuth(true)
-
         localStorage.setItem("token", data.jwt);
         setUser(data.user)
-        console.log(data.user)
       })
       .catch(console.error);
   };
 
-  // const updateBalance = (data) => {
-  //   setUser((user) => { return {...user, balance: user.balance - (data.transaction.total_price) }})
-  //   }
-
-  //   const updateCryptos = (data) => {
-  //     setUser((user) => { return {...user, cryptos: data.cryptos }})
-  
-  //   }
-// updatecrypto function ? like update balance but replace user crypto 
   const signup = (state) => {
     fetch(`http://localhost:3000/api/v1/users`, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({ user: state }),
+      // headers: {
+      //   "Content-Type": "application/json",
+      //   Accept: "application/json",
+      // },
+      body: state,
     })
       .then((resp) => resp.json())
       .then((data) => {
         setAuth(true)
         localStorage.setItem("token", data.jwt);
         setUser(data.user)
-        console.log(data.user)
       })
       .catch(console.error);
   }; 
@@ -89,8 +77,8 @@ function useProvideAuth() {
       });
       let data = await resp.json();
       setAuth(true)
-      setUser(await data)
-      return true
+      setUser(await data.user)
+      return user
     }
     return false
   };
@@ -105,7 +93,7 @@ function useProvideAuth() {
         method: 'PUT'
       });
       let data = await resp.json();
-      setUser(await data)
+      setUser(await data.user)
     
   };
  
@@ -126,7 +114,7 @@ function useProvideAuth() {
   }
   const signout = () => {
     localStorage.clear();
-    setUser(false);
+    setUser(false)
     setAuth(false)
   };
   
@@ -142,7 +130,9 @@ function useProvideAuth() {
   // ... latest auth object.
 
   useEffect(() => {
-    (() => (user ? setUser(user) : setUser(false)))();
+    (() => {
+      user ? setUser(user) : setUser(false)
+    })();
   });
 
   // Return the user object and auth methods

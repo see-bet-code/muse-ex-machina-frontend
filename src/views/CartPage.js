@@ -16,30 +16,33 @@ import HeaderLinks from "components/Header/HeaderLinks";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 import { removeFromCart, fetchItems } from "../actions/cartItemActions";
-import { fetchCarts } from "../actions/cartActions";
+import { fetchCarts, updateCart } from "../actions/cartActions";
 import { connect } from "react-redux";
 import Button from "components/CustomButtons/Button";
 import { loadStripe } from '@stripe/stripe-js';
 
 const useStyles = makeStyles(styles);
 
-const stripePromise = loadStripe('pk_test_51Hf7V4JGFWpzASnGce3wiFh3nVkn3WfNwKYMyr1iimkbDd81YOfZuCyqhuU6TTTqLCIEBX3xEqTemxHrUdZypj5o00GeZaz7MG');
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_API_KEY);
 
 
 function CartPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   let total = 0.00
-  let cartId
 
   useEffect(() => {
     (async () => {
-      cartId = await props.fetchCarts()
-      await props.fetchItems(cartId)
+      await props.fetchItems(await props.fetchCarts())
     })();
   }, []);
 
-  const checkout = async (event) => {
+  const checkout = (event) => {
+    completePurchase(event)
+    confirmPayment()
+  }
+
+  const completePurchase = async (event) => {
     // Get Stripe.js instance
     const stripe = await stripePromise;
 
@@ -57,6 +60,8 @@ function CartPage(props) {
 
     const session = await response.json();
 
+    localStorage.setItem("clientSecret", session.secret)
+
     // When the customer clicks on the button, redirect them to Checkout.
     const result = await stripe.redirectToCheckout({
       sessionId: session.id,
@@ -66,8 +71,25 @@ function CartPage(props) {
       // If `redirectToCheckout` fails due to a browser or network
       // error, display the localized error message to your customer
       console.log(result.error.message)
-    }
+    }    
+
   };
+
+  const confirmPayment = async () => {
+    const stripe = await stripePromise;
+
+    const clientSecret = localStorage.getItem('clientSecret');
+    
+    const {paymentIntent, error} = await stripe.confirmCardPayment(clientSecret);
+    if (error) {
+      // Handle error here
+      console.log(error)
+    } else if (paymentIntent && paymentIntent.status === 'succeeded') {
+      // Handle successful payment here
+      props.updateCart(props.cart.activeCart.id)
+      
+    } 
+  }
 
   const removeItem = (id) => {
     props.removeFromCart(id)
@@ -130,7 +152,7 @@ function CartPage(props) {
           </GridItem>
           <GridItem>
             Total: {total}
-            {props.items?.length > 0 &&<Button color="primary" round onClick={checkout}>
+            {props.items?.length > 0 &&<Button color="primary" round onClick={(e) => checkout(e)}>
               Checkout
           </Button>}
           </GridItem>
@@ -141,4 +163,4 @@ function CartPage(props) {
   );
 }
 
-export default connect((state) => ({ items: state.cartItems.cartItems, cart: state.carts  }), { fetchItems, removeFromCart, fetchCarts })(CartPage);
+export default connect((state) => ({ items: state.cartItems.cartItems, cart: state.carts  }), { fetchItems, removeFromCart, fetchCarts, updateCart })(CartPage);

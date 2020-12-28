@@ -39,7 +39,7 @@ function Components(props) {
     (() => {
       props.fetchProducts();
     })();
-  });
+  }, []);
 
   const classes = useStyles();
   const { ...rest } = props;
@@ -81,7 +81,7 @@ function Components(props) {
                       </Button> */}
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={4}>
-          {props.products?.map((p, i) => <div>
+          {props.products?.map((p, i) => <div key={i}>
                   <h4>
                     {p.title + " ♡ " +p.price}
                   </h4>

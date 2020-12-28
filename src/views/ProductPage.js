@@ -17,7 +17,7 @@ import Card from "components/Card/Card";
 import { useLocation } from "react-router-dom";
 import Button from "components/CustomButtons/Button";
 import Favorite from "@material-ui/icons/Favorite";
-import { useAuth } from "context/use-auth";
+// import { useAuth } from "context/use-auth";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 

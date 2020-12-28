@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -33,13 +34,14 @@ export default function ProfilePage(props) {
   const classes = useStyles();
   
   const { ...rest } = props;
-  // const imageClasses = classNames(
-  //   classes.imgRaised,
-  //   classes.imgRoundedCircle,
-  //   classes.imgFluid
-  // );
+  const imageClasses = classNames(
+    classes.imgRaised,
+    classes.imgRoundedCircle,
+    classes.imgFluid
+  );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
 
+  const purchases = auth.user?.carts?.filter(c => c.checked_out)
 
   return (
     <div>
@@ -62,13 +64,14 @@ export default function ProfilePage(props) {
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
                   <div>
-                    {/* <img src={profile} alt="..." className={imageClasses} /> */}
+                    <img src={`http://localhost:3000/${auth.user?.avatar}`} alt="..." className={imageClasses} />
                   </div>
                   <br>
                   </br>
                   <br></br>
                   <div className={classes.name}>
                     <h3 className={classes.title}>{auth.user?.name}</h3>
+                    <br></br>
                     Total Orders: {auth.user?.carts?.filter(c => c.checked_out).length}
                   </div>
                 </div>
@@ -86,14 +89,13 @@ export default function ProfilePage(props) {
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
-                          {auth.user?.carts?.map(v => {
-                            console.log(v)
-                          return<img
-                              alt="..."
-                              src={v.image}
-                              className={navImageClasses}
-                            />})
-                    }
+                          {purchases?.map(c => 
+                            c.products.map((p, i) =><Link to={{pathname: `/products/${p.asin}`, state: {
+                              product: p
+                            }}} className={classes.dropdownLink}>
+                          <img src={p.image} alt={`${p.title}`} className={navImageClasses} />
+                        </Link> ))
+                          }
                           </GridItem>
                         </GridContainer>
                       )

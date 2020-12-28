@@ -4,8 +4,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
-// import Email from "@material-ui/icons/Email";
+import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -43,13 +45,13 @@ export default function LoginPage(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const submission = {
-      name: e.target.first.value,
-      username: e.target.username.value,
-      // email: e.target.email.value,
-      password: e.target.pass.value
-    }
-    auth.signup(submission)
+    const formData = new FormData(e.target);
+    formData.append('name', e.target.first.value);
+    formData.append('username', e.target.username.value);
+    formData.append('email', e.target.email.value);
+    formData.append('password', e.target.pass.value);
+    formData.append('avatar', e.target.av.files[0]);
+    auth.signup(formData)
   }
 
   return (
@@ -109,6 +111,42 @@ export default function LoginPage(props) {
                   <p className={classes.divider}>or</p>
                   <CardBody>
                     <CustomInput
+                      labelText="Username..."
+                      id="username"
+                      formControlProps={{
+                        fullWidth: true,
+                        required: true
+                      }}
+                      onChange={handleChange}
+                      inputProps={{
+                        type: "text",
+                        endAdornment: (
+                          <AlternateEmailIcon position="end">
+                            <People className={classes.inputIconsColor} />
+                          </AlternateEmailIcon>
+                        )
+                      }}
+                    />
+                    <CustomInput
+                      labelText="Password"
+                      id="pass"
+                      formControlProps={{
+                        fullWidth: true,
+                        required: true
+                      }}
+                      inputProps={{
+                        type: "password",
+                        endAdornment: (
+                          <InputAdornment position="end">
+                            <Icon className={classes.inputIconsColor}>
+                              lock_outline
+                            </Icon>
+                          </InputAdornment>
+                        ),
+                        autoComplete: "off"
+                      }}
+                    />
+                    <CustomInput
                       labelText="First Name..."
                       id="first"
                       formControlProps={{
@@ -125,22 +163,6 @@ export default function LoginPage(props) {
                       }}
                     />
                     <CustomInput
-                      labelText="Username..."
-                      id="username"
-                      formControlProps={{
-                        fullWidth: true
-                      }}
-                      onChange={handleChange}
-                      inputProps={{
-                        type: "text",
-                        endAdornment: (
-                          <InputAdornment position="end">
-                            <People className={classes.inputIconsColor} />
-                          </InputAdornment>
-                        )
-                      }}
-                    />
-                    {/* <CustomInput
                       labelText="Email..."
                       id="email"
                       formControlProps={{
@@ -154,20 +176,20 @@ export default function LoginPage(props) {
                           </InputAdornment>
                         )
                       }}
-                    /> */}
+                    />
                     <CustomInput
-                      labelText="Password"
-                      id="pass"
+                      labelText="Avatar"
+                      id="av"
                       formControlProps={{
                         fullWidth: true
                       }}
                       inputProps={{
-                        type: "password",
+                        type: "file",
                         endAdornment: (
                           <InputAdornment position="end">
-                            <Icon className={classes.inputIconsColor}>
+                            <AccountCircleIcon className={classes.inputIconsColor}>
                               lock_outline
-                            </Icon>
+                            </AccountCircleIcon>
                           </InputAdornment>
                         ),
                         autoComplete: "off"
