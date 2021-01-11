@@ -133,7 +133,7 @@ function useProvideAuth() {
     (() => {
       user ? setUser(user) : setUser(false)
     })();
-  });
+  }, [user]);
 
   // Return the user object and auth methods
 

@@ -1,47 +1,49 @@
-import { FETCH_PRODUCTS, FILTER_PRODUCTS_BY_SIZE, ORDER_PRODUCTS_BY_PRICE } from "constants/types";
+import { FETCH_PRODUCTS, FILTER_PRODUCTS, ORDER_PRODUCTS } from "constants/types";
 
 export const fetchProducts = () => async (dispatch) => {
   const res = await fetch("http://localhost:3000/api/v1/products");
   const data = await res.json();
   dispatch({
     type: FETCH_PRODUCTS,
-    payload: JSON.parse(data.products),
+    payload: data,
   });
 };
 
-export const filterProducts = (products, size) => (dispatch) => {
+export const filterProducts = (products, str) => (dispatch) => {
+  console.log(str)
   dispatch({
-    type: FILTER_PRODUCTS_BY_SIZE,
+    type: FILTER_PRODUCTS,
     payload: {
-      size: size,
+      allItems: products,
       items:
-        size === ""
+        str === ""
           ? products
-          : products.filter((x) => x.availableSizes.indexOf(size) >= 0),
+          : products.filter((p) => p.title.toLowerCase().includes(str)),
     },
   });
 };
-export const sortProducts = (filteredProducts, sort) => (dispatch) => {
-  const sortedProducts = filteredProducts.slice();
-  if (sort === "latest") {
-    sortedProducts.sort((a, b) => (a.id > b.id ? 1 : -1));
-  } else {
-    sortedProducts.sort((a, b) =>
-      sort === "lowest"
-        ? a.price > b.price
-          ? 1
-          : -1
-        : a.price > b.price
-        ? -1
-        : 1
-    );
+export const sortProducts = (products, sort) => (dispatch) => {
+  const sortedProducts = products.slice();
+  switch (sort) {
+    case "New Arrivals":
+      sortedProducts.sort((a, b) => (a.asin < b.asin ? 1 : -1));
+      break
+    case "Price Low to High":
+      sortedProducts.sort((a, b) => a.price > b.price ? 1 : -1);
+      break
+    case "Price High to Low":
+      sortedProducts.sort((a, b) => a.price < b.price ? 1 : -1);
+      break
+    default:
+      break
   }
+  
   console.log(sortedProducts);
   dispatch({
-    type: ORDER_PRODUCTS_BY_PRICE,
+    type: ORDER_PRODUCTS,
     payload: {
-      sort: sort,
-      items: sortedProducts,
+      allItems: products,
+      items: sortedProducts
     },
   });
 };

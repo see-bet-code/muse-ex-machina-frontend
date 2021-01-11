@@ -19,13 +19,13 @@ const store = createStore(
   combineReducers({
     products: productsReducer,
     cartItems: cartItemReducer,
-    carts: cartReducer,
+    carts: cartReducer
   }),
   {},
   composeEnhancer(applyMiddleware(thunk))
 );
 
-var hist = createBrowserHistory();
+var hist = createBrowserHistory({forceRefresh:true});
 
 ReactDOM.render(
   <React.StrictMode>

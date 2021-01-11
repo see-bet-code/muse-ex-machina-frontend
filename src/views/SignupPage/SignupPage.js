@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useRef, useState, useCallback} from "react";
+import {Link} from "react-router-dom";
+import Webcam from "react-webcam"
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -8,6 +10,8 @@ import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
+import AddAPhotoIcon from '@material-ui/icons/AddAPhoto';
+import LoyaltyIcon from '@material-ui/icons/Loyalty';
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -29,19 +33,23 @@ const useStyles = makeStyles(styles);
 
 export default function LoginPage(props) {
   const auth = useAuth();
+  const [show, setShow] = useState(false)
+  const webcamRef = useRef(null);
+  const [imgSrc, setImgSrc] = useState(null);
+  const [cardAnimaton, setCardAnimation] = useState("cardHidden");
 
-  const handleChange = (e) => {
-    console.log(e.target)
-    console.log("hi")
-    // setState({...state, [e.target.placeholder]: e.target.value})
-  }
-
-  const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
+  
   setTimeout(function() {
     setCardAnimation("");
   }, 700);
   const classes = useStyles();
   const { ...rest } = props;
+
+  const capturePhoto = useCallback(() => {
+    const imageSrc = webcamRef.current.getScreenshot();
+    setImgSrc(imageSrc)
+  }, [webcamRef, setImgSrc]);
+    
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -50,8 +58,25 @@ export default function LoginPage(props) {
     formData.append('username', e.target.username.value);
     formData.append('email', e.target.email.value);
     formData.append('password', e.target.pass.value);
+    formData.append('clothing_size', e.target.clothingSize.value);
+    formData.append('shoe_size', e.target.shoeSize.value);
     formData.append('avatar', e.target.av.files[0]);
-    auth.signup(formData)
+    if (imgSrc) {
+      fetch(imgSrc)
+        .then(res => res.blob())
+        .then(blob => {
+          const file = new File([blob], "File name",{ type: "image/png" })
+          formData.append('avatar', file)
+          auth.signup(formData)
+          window.alert("Thank you for signing up");
+          props.history.push("/profile-page")
+        })
+    } else {
+      auth.signup(formData)
+      window.alert("Thank you for signing up");
+      props.history.push("/profile-page")
+    }
+    
   }
 
   return (
@@ -76,8 +101,9 @@ export default function LoginPage(props) {
             <GridItem xs={12} sm={12} md={4}>
               <Card className={classes[cardAnimaton]}>
                 <form className={classes.form} onSubmit={handleSubmit}>
-                  <CardHeader color="primary" className={classes.cardHeader}>
-                    <h4>Login</h4>
+                  <CardHeader className={classes.cardHeader}>
+                    <br></br>
+                    <h4>Signup</h4>
                     <div className={classes.socialLine}>
                       <Button
                         justIcon
@@ -117,7 +143,6 @@ export default function LoginPage(props) {
                         fullWidth: true,
                         required: true
                       }}
-                      onChange={handleChange}
                       inputProps={{
                         type: "text",
                         endAdornment: (
@@ -152,7 +177,6 @@ export default function LoginPage(props) {
                       formControlProps={{
                         fullWidth: true
                       }}
-                      onChange={handleChange}
                       inputProps={{
                         type: "text",
                         endAdornment: (
@@ -178,6 +202,32 @@ export default function LoginPage(props) {
                       }}
                     />
                     <CustomInput
+                      labelText="Clothing size..."
+                      id="clothingSize"
+                      formControlProps={{
+                        fullWidth: true
+                      }}
+                      inputProps={{
+                        type: "number",
+                        endAdornment: (
+                            <LoyaltyIcon className={classes.inputIconsColor} />
+                        )
+                      }}
+                    />
+                    <CustomInput
+                      labelText="Shoe size..."
+                      id="shoeSize"
+                      formControlProps={{
+                        fullWidth: true
+                      }}
+                      inputProps={{
+                        type: "number",
+                        endAdornment: (
+                          <LoyaltyIcon className={classes.inputIconsColor} />
+                        )
+                      }}
+                    />
+                    <CustomInput
                       labelText="Avatar"
                       id="av"
                       formControlProps={{
@@ -195,9 +245,25 @@ export default function LoginPage(props) {
                         autoComplete: "off"
                       }}
                     />
+                    <Button justify="right" onClick={() =>setShow(!show)}>
+                      <AddAPhotoIcon/>
+                    </Button>
+                    {show && <>
+                      <Webcam
+                        audio={false}
+                        ref={webcamRef}
+                        screenshotFormat="image/png"
+                      />
+                      <Button onClick={capturePhoto}>Capture photo</Button>
+                      {imgSrc && (
+                        <img
+                          src={imgSrc} alt="webcam capture"
+                        />
+                      )}
+                    </>}
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button simple color="primary" size="lg" type="submit">
+                    <Button color="transparent" simple size="lg" type="submit">
                       Get started
                     </Button>
                   </CardFooter>

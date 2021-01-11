@@ -1,4 +1,4 @@
-import { ADD_TO_CART, UPDATE_CART_ITEM, REMOVE_FROM_CART, FETCH_ITEMS } from "constants/types";
+import { ADD_TO_CART, UPDATE_CART_ITEM, CLEAR_CART_ITEMS, REMOVE_FROM_CART, FETCH_ITEMS } from "constants/types";
 
 export const fetchItems = (id) => async (dispatch) => {
   const res = await fetch(`http://localhost:3000/api/v1/carts/${id}`, {
@@ -14,7 +14,7 @@ export const fetchItems = (id) => async (dispatch) => {
   return JSON.parse(data.active_cart).cart_items
 };
 
-export const addToCart = (item) => (dispatch, getState) => {
+export const addToCart = (item, qty) => (dispatch, getState) => {
   const cartId = getState().carts.activeCart.id
   dispatch({ type: 'LOADING_ITEMS'})
   fetch(`http://localhost:3000/api/v1/cart_items/`, {
@@ -23,7 +23,7 @@ export const addToCart = (item) => (dispatch, getState) => {
       "Content-Type": "application/json",
       Authorization: `Bearer ${localStorage.getItem("token")}`
     },
-    body: JSON.stringify({product_id: item.id, cart_id: cartId, quantity: 1}),
+    body: JSON.stringify({product_id: item.id, cart_id: cartId, quantity: qty}),
   })
     .then((res) => res.json())
     .then((data) => {
@@ -34,24 +34,25 @@ export const addToCart = (item) => (dispatch, getState) => {
     });
 };
 
-export const updateCart = (item) => (dispatch, getState) => {
+export const updateCartItem = (item, qty) => (dispatch) => {
   dispatch({ type: 'LOADING_ITEMS'})
-  const newQ = ++item.quantity
+  const newQ = item.quantity + qty
   fetch(`http://localhost:3000/api/v1/cart_items/${item.id}`, {
-  method: "PATCH",
-  headers: {
-    "Content-Type": "application/json",
-    Authorization: `Bearer ${localStorage.getItem("token")}`
-  },
-  body: JSON.stringify({quantity: newQ}),
-})
-  .then((res) => res.json())
-  .then((data) => {
-    dispatch({
-      type: UPDATE_CART_ITEM,
-      payload: JSON.parse(data.cart_items),
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${localStorage.getItem("token")}`
+    },
+    body: JSON.stringify({quantity: newQ}),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data)
+      dispatch({
+        type: UPDATE_CART_ITEM,
+        payload: JSON.parse(data.cart_items),
+      });
     });
-  });
 }
 
 export const removeFromCart = (id) => async (dispatch) => {
@@ -69,3 +70,22 @@ export const removeFromCart = (id) => async (dispatch) => {
     payload: JSON.parse(data.cart_items),
   });
 };
+
+export const clearCartItems = () => (dispatch, getState) => {
+  const cartId = getState().carts.activeCart.id
+  fetch(`http://localhost:3000/api/v1/clear_cart`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${localStorage.getItem("token")}`
+    },
+    body: JSON.stringify({cart_id: cartId}),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      dispatch({
+        type: CLEAR_CART_ITEMS,
+        payload: data.cart_items,
+      });
+    });
+}

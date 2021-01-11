@@ -8,14 +8,18 @@ import { makeStyles } from "@material-ui/core/styles";
 import Camera from "@material-ui/icons/Camera";
 // import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
+import StarBorderIcon from '@material-ui/icons/StarBorder';
+// @material-ui/lab
+import { Rating } from '@material-ui/lab';
 // core components
 import Header from "components/Header/Header";
-// import Button from "components/CustomButtons/Button.js";
+import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
 import HeaderLinks from "components/Header/HeaderLinks";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
+
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
@@ -41,7 +45,41 @@ export default function ProfilePage(props) {
   );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
 
-  const purchases = auth.user?.carts?.filter(c => c.checked_out)
+  const findRating = (prodId) => {
+    return auth.user.reviews.find(r => r.product.id === prodId).rating;
+  }
+
+  const findReview = (prodId) => {
+    return auth.user.reviews.find(r => r.product.id === prodId);
+
+  }
+
+  const showPurchases = () => {
+    const purchases = auth.user?.carts?.filter(c => c.checked_out)
+    const prods = purchases?.map(c => c.products).flat()
+    return prods?.map((p) => (
+      <GridItem key={p.asin} xs={6} sm={12} md={6}>
+        {p.title}<br></br>
+        <Rating
+          value={findRating(p.id)}
+          precision={0.5}
+          readOnly
+          emptyIcon={<StarBorderIcon fontSize="inherit" />}
+          size="large"
+        /><br></br>
+        <Link to={{pathname: `/review-form/${p.asin}`, state: {
+            review: findReview(p.id)
+            }}} className={classes.dropdownLink} >
+          <Button>{findRating(p.id) ? "Update Review" : "Review Product"}</Button>
+        </Link>
+        <Link to={{pathname: `/products/${p.asin}`, state: {
+            product: p
+            }}} className={classes.dropdownLink} >
+          <img src={p.image} alt={`${p.title}`} className={navImageClasses} />
+        </Link>
+      </GridItem>
+    ))
+  }
 
   return (
     <div>
@@ -64,7 +102,7 @@ export default function ProfilePage(props) {
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
                   <div>
-                    <img src={`http://localhost:3000/${auth.user?.avatar}`} alt="..." className={imageClasses} />
+                    <img src={`http://localhost:3000${auth.user?.avatar}`} alt="..." className={imageClasses} />
                   </div>
                   <br>
                   </br>
@@ -88,31 +126,19 @@ export default function ProfilePage(props) {
                       tabIcon: Camera,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                          {purchases?.map(c => 
-                            c.products.map((p, i) =><Link to={{pathname: `/products/${p.asin}`, state: {
-                              product: p
-                            }}} className={classes.dropdownLink}>
-                          <img src={p.image} alt={`${p.title}`} className={navImageClasses} />
-                        </Link> ))
-                          }
-                          </GridItem>
+                          {auth.user && showPurchases()}
                         </GridContainer>
                       )
                     },
                     {
-                      tabButton: "Views",
+                      tabButton: "Recommendations",
                       tabIcon: Favorite,
                       tabContent: (
                         <GridContainer justify="center">
                           
                           <GridItem xs={12} sm={12} md={4}>
                             
-                            {auth.user?.carts?.map(v => <img
-                              alt="..."
-                              src={v.image}
-                              className={navImageClasses}
-                            />)}
+                            This feature coming soon!
                           </GridItem>
                           
                         </GridContainer>

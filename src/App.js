@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 // import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -9,17 +9,10 @@ import SignupPage from "views/SignupPage/SignupPage";
 import ProductPage from "views/ProductPage"
 import LoginPage from "views/LoginPage"
 import CartPage from "views/CartPage"
-
-import { useAuth } from "context/use-auth";
+import ReviewForm from "views/ReviewForm";
+import UpdateForm from "views/UpdateForm";
 
 function App() {
-  const auth = useAuth();
-
-  useEffect(() => {
-    (() => {
-      auth.signInFromToken();
-    })();
-  }, []);
 
   return (
     <div>
@@ -32,6 +25,8 @@ function App() {
             <Route path="/profile-page" component={ProfilePage} />
             <Route path="/signup-page" component={SignupPage} />
             <Route path="/login-page" component={LoginPage} />
+            <Route path="/update-form" component={UpdateForm} />
+            <Route path="/review-form/:asin" component={ReviewForm} />
             <Route path="/products/:asin" component={ProductPage} />
             <Route path="/cart" component={CartPage} />
             <Route exact path="/" component={Components} />

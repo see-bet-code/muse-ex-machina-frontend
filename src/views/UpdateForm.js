@@ -1,5 +1,4 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -27,7 +26,6 @@ const useStyles = makeStyles(styles);
 
 export default function LoginPage(props) {
   const auth = useAuth();
-  let history = useHistory();
 
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
   setTimeout(function() {
@@ -36,15 +34,13 @@ export default function LoginPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     const submission = {
       username: e.target.username.value,
       password: e.target.pass.value
     }
-    await auth.signin(submission)
-    await window.alert("Welcome back!")
-    await history.push("/profile-page")
+    auth.signin(submission)
   }
 
   return (
@@ -69,8 +65,7 @@ export default function LoginPage(props) {
             <GridItem xs={12} sm={12} md={4}>
               <Card className={classes[cardAnimaton]}>
                 <form className={classes.form} onSubmit={handleSubmit}>
-                  <br></br>
-                  <CardHeader className={classes.cardHeader}>
+                  <CardHeader color="primary" className={classes.cardHeader}>
                     <h4>Login</h4>
                     <div className={classes.socialLine}>
                       <Button
@@ -139,8 +134,8 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button simple color="transparent" size="lg" type="submit">
-                      Welcome back
+                    <Button simple color="primary" size="lg" type="submit">
+                      Update Profile
                     </Button>
                   </CardFooter>
                 </form>

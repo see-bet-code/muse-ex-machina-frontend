@@ -1,7 +1,8 @@
 /*eslint-disable*/
 import React from "react";
-import DeleteIcon from "@material-ui/icons/Delete";
-import IconButton from "@material-ui/core/IconButton";
+// import DeleteIcon from "@material-ui/icons/Delete";
+// import IconButton from "@material-ui/core/IconButton";
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
 
@@ -20,10 +21,18 @@ import Button from "components/CustomButtons/Button";
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 
+import { useAuth } from "context/use-auth";
+
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
+  const auth = useAuth();
   const classes = useStyles();
+
+  const signout = async () => {
+    await auth.signout()
+    await window.alert("You've been signed out.");
+  }
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
@@ -56,11 +65,27 @@ export default function HeaderLinks(props) {
       </ListItem>
 
       <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
+        {/* <Tooltip title="Delete">
           <IconButton aria-label="Delete">
-            <DeleteIcon />
+            <ExitToAppIcon />
           </IconButton>
-        </Tooltip>*/}
+        </Tooltip> */}
+        <Tooltip
+          id="logout-tooltip"
+          title="Logout/end session"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href="/signup-page"
+            target="_self"
+            className={classes.navLink}
+            onClick={signout}
+          >
+            <ExitToAppIcon />
+          </Button>
+        </Tooltip>
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
